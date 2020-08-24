@@ -1,10 +1,31 @@
-const japanLandmarks = ["Shujiro Castle","Tokyo's Skytree","Taketomi Beach","Mount Fuji"]
+const japanLandmarks = [
+    {
+        name: "Shujiro Castle",
+        location: "Naha, Japan"
+    },
+    {
+        name: "Tokyo's Skytree",
+        location: "Tokyo, Japan"
+    },
+    {
+        name: "Taketomi Beach",
+        location: "Taketomi Island, Japan"
+    },
+    {
+        name: "Mount Fuji",
+        location: "Shizuoka‎ and ‎Yamanashi prefectures"
+    },
+    {
+        name: "Kinkaku-ji",
+        location: "Kyoto, Japan"
+    }
+]
 export const useLandmarks = () => {
     return japanLandmarks.slice()
 }
 const Landmarks = (city) => {
     return `
-            <li class="landmark">${city}</li>
+            <li class="landmark">${city.name} --- ${city.location}</li>
     `
 }
 export const landmarkList = () => {

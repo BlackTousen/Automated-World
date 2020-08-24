@@ -1,10 +1,17 @@
-const japanPeople = ["Akira Kurosawa","Ayumi Hamasaki","Emperor Meiji","Utada Hikaru","Minamoto no Yoshitsune","Hayao Miyazaki"]
+const japanPeople = [
+    {name: "Akira Kurosawa"}, 
+    {name: "Ayumi Hamasaki"},
+    {name: "Emperor Meiji"},
+    {name: "Utada Hikaru"},
+    {name: "Minamoto no Yoshitsune"},
+    {name: "Hayao Miyazaki"}
+]
 export const usePeople = () => {
     return japanPeople.slice()
 }
 const People = (city) => {
     return `
-            <li class="famous">${city}</li>
+            <li class="famous">${city.name}</li>
     `
 }
 export const peopleLists = () => {

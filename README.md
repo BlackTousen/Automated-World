@@ -1,1 +1,3 @@
-# automated-world-time-code
+# Team Time Code
+
+![Wireframe](img/wireframe.png)

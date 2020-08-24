@@ -5,7 +5,7 @@
 
 .cities-list {
     background-color: lightblue;
-    padding: 25px;
+    padding: 50px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -15,6 +15,12 @@
     margin: 10px;
     background-color: rgba(0, 0, 0, .15);
     min-width: 200px;
+}
+
+#city-intro {
+    flex-basis: 100%;
+    margin: 0;
+    text-align: center;
 }
 
 .cities-image {
@@ -46,6 +52,59 @@
 }
 
 .cities-top-three {
+    list-style: none;
+    padding-left: 0;
+}
+
+.landmarks-list {
+    background-color: lightblue;
+    padding: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.landmarks-list-entries {
+    margin: 10px;
+    background-color: rgba(0, 0, 0, .15);
+    min-width: 200px;
+}
+
+#landmark-intro {
+    flex-basis: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.landmarks-image {
+    max-width: 300px;
+}
+
+.landmarks-image img {
+    width: 100%;
+}
+
+.landmarks-copy {
+    padding: 25px;
+}
+
+.landmarks-copy h2 {
+    margin: 0 0 5px 0;
+}
+
+.landmarks-copy h3 {
+    margin-top: 0;
+}
+
+.landmarks-copy h4 {
+    margin-bottom: 5px;
+}
+
+.landmarks-copy ul {
+    margin-bottom: 0;
+}
+
+.landmarks-top-three {
     list-style: none;
     padding-left: 0;
 }

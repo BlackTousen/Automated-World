@@ -4,7 +4,8 @@ const landmarksCollection = [
         address: {
             street: "5 Avenue Anatole France",
             city: "75007 Paris"
-        }
+        },
+        photo: "eiffel-tower.jpg"
     },
     {
         name: "Louvre Museum",

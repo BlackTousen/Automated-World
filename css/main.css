@@ -6,3 +6,7 @@ body {
     margin: 0;
     font-family: 'Alata', sans-serif;
 }
+
+.intro h2 {
+    text-align: center;
+}

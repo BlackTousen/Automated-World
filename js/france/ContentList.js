@@ -9,6 +9,7 @@ const peopleTarget = document.querySelector(".people-list");
 
 export const CityList = () => {
     const cityArray = useCities();
+    cityTarget.innerHTML = '<h2 id="city-intro">Cities Worth Visiting</h2>'
     cityArray.forEach(
         (cityObj) => {
             cityTarget.innerHTML += City(cityObj);
@@ -18,6 +19,7 @@ export const CityList = () => {
 
 export const LandmarkList = () => {
     const landArray = useLandmarks();
+    landTarget.innerHTML = '<h2 id="landmark-intro">Must See Locations</h2>'
     landArray.forEach(
         (landObj) => {
             landTarget.innerHTML += Landmark(landObj);

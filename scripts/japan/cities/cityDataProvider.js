@@ -1,10 +1,17 @@
-const japanCities = ["Tokyo","Osaka","Okinawa","Kyoto","Kawasaki","Saitama"]
+const japanCities = [
+    { name: "Tokyo", },
+    { name: "Osaka" },
+    { name: "Okinawa", },
+    { name: "Kyoto", },
+    { name: "Kawasaki", },
+    { name: "Saitama" }
+]
 export const useCities = () => {
     return japanCities.slice()
 }
 const Cities = (city) => {
     return `
-            <li class="city">${city}</li>
+            <li class="city">${city.name}</li>
     `
 }
 export const cityList = () => {

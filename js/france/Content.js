@@ -4,15 +4,18 @@ export const City = (cityObj) => {
             <div class="cities-image">
                 <img src="../${cityObj.photo}" alt="${cityObj.name}">
             </div>
-            <h2>${cityObj.name}</h2>
-            <h3>${cityObj.region}</h3>
-            <p class="cities-area">${cityObj.area} mi<sup>2</sup></p>
-            <p class="cities-population">${cityObj.population}</p>
-            <ul class="cities-top-three">
-                <li>${cityObj.topOne}</li>
-                <li>${cityObj.topTwo}</li>
-                <li>${cityObj.topThree}</li>
-            </ul>
+            <div class="cities-copy">
+                <h2>${cityObj.name}</h2>
+                <h3>${cityObj.region}</h3>
+                <p class="cities-area"><strong>Size:</strong> ${cityObj.area} mi<sup>2</sup></p>
+                <p class="cities-population"><strong>Population:</strong> ${cityObj.population}</p>
+                <ul class="cities-top-three">
+                    <li><h4>Must-See Places:</h4></li>
+                    <li>${cityObj.topOne}</li>
+                    <li>${cityObj.topTwo}</li>
+                    <li>${cityObj.topThree}</li>
+                </ul>
+            </div>
         </div>
     `
 };

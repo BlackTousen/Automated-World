@@ -18,11 +18,31 @@
 }
 
 .cities-image {
-    max-width: 250px;
+    max-width: 300px;
 }
 
 .cities-image img {
     width: 100%;
+}
+
+.cities-copy {
+    padding: 25px;
+}
+
+.cities-copy h2 {
+    margin: 0 0 5px 0;
+}
+
+.cities-copy h3 {
+    margin-top: 0;
+}
+
+.cities-copy h4 {
+    margin-bottom: 5px;
+}
+
+.cities-copy ul {
+    margin-bottom: 0;
 }
 
 .cities-top-three {

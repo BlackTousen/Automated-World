@@ -2,11 +2,14 @@ import { useCityData } from './CitiesDataProvider.js';
 import { useFamousData } from './FamousDataProvider.js';
 import { useLandmarkData } from './LandmarksDataProvider.js';
 
-export const createCityHTML = (CitiesArray) => {
+export const createCityHTML = (cityObj) => {
 	return `
-        <section class="Cities-List">
-            <li>${CitiesArray}</li>
-        </section>
+        <div class="cities-list-entries">
+            <h2>${cityObj.name}</h2>
+            <h3>${cityObj.region}</h3>
+            <p class="cities-area">${cityObj.area} mi<sup>2</sup></p>
+            <p class="cities-population">${cityObj.population}</p>
+        </div>
     `;
 };
 
@@ -28,12 +31,12 @@ export const createLandmarksHTML = (LandmarksArray) => {
 
 export const cityList = () => {
 	// Get a reference to the `<article class="content">` element
-	const contentElement = document.querySelector('.cities-holder');
+	const contentElement = document.querySelector('.cities-list');
 	const citiesDataArray = useCityData();
 
 	let cityHTMLRepresentation = '';
 	for (const placeHolderCities of citiesDataArray) {
-		cityHTMLRepresentation += createCityHTML(placeHolderCities.Name);
+		cityHTMLRepresentation += createCityHTML(placeHolderCities);
 	}
 
 	// Add to the existing HTML in the content element
@@ -45,7 +48,7 @@ export const cityList = () => {
 
 export const famousList = () => {
 	// Get a reference to the `<article class="content">` element
-	const contentElement = document.querySelector('.famous-holder');
+	const contentElement = document.querySelector('.people-list');
 	const famousDataArray = useFamousData();
 
 	let famousHTMLRepresentation = '';
@@ -62,7 +65,7 @@ export const famousList = () => {
 
 export const landmarksList = () => {
 	// Get a reference to the `<article class="content">` element
-	const contentElement = document.querySelector('.landmarks-holder');
+	const contentElement = document.querySelector('.landmarks-list');
 	const landmarksDataArray = useLandmarkData();
 
 	let landmarksHTMLRepresentation = '';

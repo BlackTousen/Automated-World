@@ -7,4 +7,15 @@
     background-color: lightblue;
     margin: 25px;
     display: flex;
+    flex-wrap: wrap;
+}
+
+.cities-list-entries {
+    padding: 25px;
+    border: 1px solid black;
+}
+
+.cities-top-three {
+    list-style: none;
+    padding-left: 0;
 }

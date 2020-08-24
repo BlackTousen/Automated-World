@@ -26,14 +26,14 @@ export const createLandmarksHTML = (LandmarksArray) => {
     `;
 };
 
-export const CityList = () => {
+export const cityList = () => {
 	// Get a reference to the `<article class="content">` element
 	const contentElement = document.querySelector('.cities-holder');
 	const citiesDataArray = useCityData();
 
 	let cityHTMLRepresentation = '';
 	for (const placeHolderCities of citiesDataArray) {
-		cityHTMLRepresentation += createCityHTML(placeHolderCities);
+		cityHTMLRepresentation += createCityHTML(placeHolderCities.Name);
 	}
 
 	// Add to the existing HTML in the content element
@@ -50,7 +50,7 @@ export const famousList = () => {
 
 	let famousHTMLRepresentation = '';
 	for (const placeHolderFamous of famousDataArray) {
-		famousHTMLRepresentation += createFamousHTML(placeHolderFamous);
+		famousHTMLRepresentation += createFamousHTML(placeHolderFamous.Name);
 	}
 
 	// Add to the existing HTML in the content element
@@ -67,7 +67,9 @@ export const landmarksList = () => {
 
 	let landmarksHTMLRepresentation = '';
 	for (const placeHolderLandmarks of landmarksDataArray) {
-		landmarksHTMLRepresentation += createLandmarksHTML(placeHolderLandmarks);
+		landmarksHTMLRepresentation += createLandmarksHTML(
+			placeHolderLandmarks.Name
+		);
 	}
 
 	// Add to the existing HTML in the content element

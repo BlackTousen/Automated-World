@@ -1,9 +1,9 @@
 const FamousDataArray = [
-	'David Rockefeller',
-	'Howard Hughes',
-	'Dewayne "The Rock" Johnson',
-	'Benjamin Franklin',
-	'Chris Cornell',
+	{ Name: 'David Rockefeller' },
+	{ Name: 'Howard Hughes' },
+	{ Name: 'Dewayne "The Rock" Johnson' },
+	{ Name: 'Benjamin Franklin' },
+	{ Name: 'Chris Cornell' },
 ];
 
 export const useFamousData = () => {

@@ -1,9 +1,9 @@
 const citiesDataArray = [
-	'New York City',
-	'Los Angeles',
-	'Miami',
-	'Philadelphia',
-	'Seattle',
+	{ Name: 'New York City' },
+	{ Name: 'Los Angeles' },
+	{ Name: 'Miami' },
+	{ Name: 'Philadelphia' },
+	{ Name: 'Seattle' },
 ];
 
 export const useCityData = () => {

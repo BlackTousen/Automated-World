@@ -1,1 +1,7 @@
+@import 'header.css';
 @import 'france.css';
+
+body {
+    margin: 0;
+    font-family: 'Alata', sans-serif;
+}

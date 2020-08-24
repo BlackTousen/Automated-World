@@ -1,0 +1,8 @@
+@import 'header.css';
+@import 'footer.css';
+@import 'lists.css';
+
+body {
+    margin: 0;
+    font-family: 'Alata', sans-serif;
+}

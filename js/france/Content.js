@@ -1,6 +1,9 @@
 export const City = (cityObj) => {
     return `
         <div class="cities-list-entries">
+            <div class="cities-image">
+                <img src="../${cityObj.photo}" alt="${cityObj.name}">
+            </div>
             <h2>${cityObj.name}</h2>
             <h3>${cityObj.region}</h3>
             <p class="cities-area">${cityObj.area} mi<sup>2</sup></p>

@@ -1,18 +1,28 @@
 .section-container {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
 }
 
 .cities-list {
     background-color: lightblue;
-    margin: 25px;
+    padding: 25px;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 .cities-list-entries {
-    padding: 25px;
-    border: 1px solid black;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, .15);
+    min-width: 200px;
+}
+
+.cities-image {
+    max-width: 250px;
+}
+
+.cities-image img {
+    width: 100%;
 }
 
 .cities-top-three {

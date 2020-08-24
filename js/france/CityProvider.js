@@ -6,7 +6,8 @@ const cityCollection = [
         region: "Ile-de-France",
         topOne: "Eiffel Tower",
         topTwo: "Louvre Museum",
-        topThree: "Arc de Triomphe"
+        topThree: "Arc de Triomphe",
+        photo: "img/france/paris.jpg"
     },
     {
         name: "Marseille",

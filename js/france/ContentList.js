@@ -29,6 +29,7 @@ export const LandmarkList = () => {
 
 export const PeopleList = () => {
     const peopleArray = usePeople();
+    peopleTarget.innerHTML = '<h2 id="people-intro">Historical Figures</h2>'
     peopleArray.forEach(
         (peopleObj) => {
             peopleTarget.innerHTML += People(peopleObj);

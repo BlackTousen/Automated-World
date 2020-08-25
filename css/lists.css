@@ -4,11 +4,12 @@
 }
 
 .cities-list {
-    background-color: lightblue;
+    background-color: lightskyblue;
     padding: 50px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    border-top: 10px solid tomato;
 }
 
 .cities-list-entries {
@@ -21,6 +22,9 @@
     flex-basis: 100%;
     margin: 0;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
 }
 
 .cities-image {
@@ -57,11 +61,12 @@
 }
 
 .landmarks-list {
-    background-color: lightblue;
+    background-color: lightskyblue;
     padding: 50px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    border-top: 3px dotted rgba(0, 0, 0, .1);
 }
 
 .landmarks-list-entries {
@@ -74,6 +79,9 @@
     flex-basis: 100%;
     margin: 0;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
 }
 
 .landmarks-image {
@@ -105,6 +113,63 @@
 }
 
 .landmarks-top-three {
+    list-style: none;
+    padding-left: 0;
+}
+
+.people-list {
+    background-color: lightskyblue;
+    padding: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    border-top: 3px dotted rgba(0, 0, 0, .1);
+}
+
+.people-list-entries {
+    margin: 10px;
+    background-color: rgba(0, 0, 0, .15);
+    min-width: 200px;
+}
+
+#people-intro {
+    flex-basis: 100%;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.people-image {
+    max-width: 300px;
+}
+
+.people-image img {
+    width: 100%;
+}
+
+.people-copy {
+    padding: 25px;
+}
+
+.people-copy h2 {
+    margin: 0 0 5px 0;
+}
+
+.people-copy h3 {
+    margin-top: 0;
+}
+
+.people-copy h4 {
+    margin-bottom: 5px;
+}
+
+.people-copy ul {
+    margin-bottom: 0;
+}
+
+.people-top-three {
     list-style: none;
     padding-left: 0;
 }

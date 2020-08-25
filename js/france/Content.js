@@ -23,9 +23,14 @@ export const City = (cityObj) => {
 export const Landmark = (landObj) => {
     return `
         <div class="landmarks-list-entries">
-            <h2>${landObj.name}</h2>
-            <p class="landmark-address-street">${landObj.address.street}</p>
-            <p class="landmark-address-city">${landObj.address.city}</p>
+            <div class="landmarks-image">
+                <img src="../${landObj.photo}" alt="${landObj.name}">
+            </div>
+            <div class="landmarks-copy">
+                <h2>${landObj.name}</h2>
+                <p class="landmark-address-street">${landObj.address.street}</p>
+                <p class="landmark-address-city">${landObj.address.city}</p>
+            </div>
         </div>
     `
 };
@@ -33,9 +38,14 @@ export const Landmark = (landObj) => {
 export const People = (peopleObj) => {
     return `
         <div class="people-list-entries">
-            <h2>${peopleObj.name}</h2>
-            <p class="people-birth-info">Born on ${peopleObj.birth.date} in ${peopleObj.birth.place}</p>
-            <p class="people-death-info">Died on ${peopleObj.death.date} in ${peopleObj.death.place}</p>
+            <div class="people-image">
+                <img src="../${peopleObj.photo}" alt="${peopleObj.name}">
+            </div>
+            <div class="people-copy">
+                <h2>${peopleObj.name}</h2>
+                <p class="people-birth-info">Born ${peopleObj.birth.date} in ${peopleObj.birth.place}</p>
+                <p class="people-death-info">Died ${peopleObj.death.date} in ${peopleObj.death.place}</p>
+            </div>
         </div>
     `
 };

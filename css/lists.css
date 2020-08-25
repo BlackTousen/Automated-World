@@ -1,178 +1,178 @@
 .section-container {
-    display: flex;
-    flex-flow: column wrap;
+	display: flex;
+	flex-flow: column wrap;
 }
 
 .cities-list {
-    background-color: azure;
-    padding: 50px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    border-top: 10px solid tomato;
+	background-color: azure;
+	padding: 50px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	border-top: 10px solid tomato;
 }
 
 .cities-list-entries {
-    margin: 10px;
-    background-color: rgba(0, 0, 0, .15);
-    min-width: 200px;
-    border-bottom: 10px solid tomato;
+	margin: 10px;
+	background-color: rgba(0, 0, 0, 0.15);
+	min-width: 200px;
+	border-bottom: 10px solid tomato;
 }
 
 #city-intro {
-    flex-basis: 100%;
-    margin: 0;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 50px;
+	flex-basis: 100%;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 50px;
 }
 
 .cities-image {
-    max-width: 300px;
+	max-width: 300px;
 }
 
 .cities-image img {
-    width: 100%;
+	width: 100%;
 }
 
 .cities-copy {
-    padding: 25px;
+	padding: 25px;
 }
 
 .cities-copy h2 {
-    margin: 0 0 5px 0;
+	margin: 0 0 5px 0;
 }
 
 .cities-copy h3 {
-    margin-top: 0;
+	margin-top: 0;
 }
 
 .cities-copy h4 {
-    margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .cities-copy ul {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .cities-top-three {
-    list-style: none;
-    padding-left: 0;
+	list-style: none;
+	padding-left: 0;
 }
 
 .landmarks-list {
-    background-color: azure;
-    padding: 50px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    border-top: 3px dotted rgba(0, 0, 0, .1);
+	background-color: azure;
+	padding: 50px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	border-top: 3px dotted rgba(0, 0, 0, 0.1);
 }
 
 .landmarks-list-entries {
-    margin: 10px;
-    background-color: rgba(0, 0, 0, .15);
-    min-width: 200px;
-    border-bottom: 10px solid tomato;
+	margin: 10px;
+	background-color: rgba(0, 0, 0, 0.15);
+	min-width: 200px;
+	border-bottom: 10px solid tomato;
 }
 
 #landmark-intro {
-    flex-basis: 100%;
-    margin: 0;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 50px;
+	flex-basis: 100%;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 50px;
 }
 
 .landmarks-image {
-    max-width: 300px;
+	max-width: 300px;
 }
 
 .landmarks-image img {
-    width: 100%;
+	width: 100%;
 }
 
 .landmarks-copy {
-    padding: 25px;
+	padding: 25px;
 }
 
 .landmarks-copy h2 {
-    margin: 0 0 5px 0;
+	margin: 0 0 5px 0;
 }
 
 .landmarks-copy h3 {
-    margin-top: 0;
+	margin-top: 0;
 }
 
 .landmarks-copy h4 {
-    margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .landmarks-copy ul {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .landmarks-top-three {
-    list-style: none;
-    padding-left: 0;
+	list-style: none;
+	padding-left: 0;
 }
 
 .people-list {
-    background-color: azure;
-    padding: 50px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    border-top: 3px dotted rgba(0, 0, 0, .1);
+	background-color: azure;
+	padding: 50px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	border-top: 3px dotted rgba(0, 0, 0, 0.1);
 }
 
 .people-list-entries {
-    margin: 10px;
-    background-color: rgba(0, 0, 0, .15);
-    min-width: 200px;
-    border-bottom: 10px solid tomato;
+	margin: 10px;
+	background-color: rgba(0, 0, 0, 0.15);
+	min-width: 200px;
+	border-bottom: 10px solid tomato;
 }
 
 #people-intro {
-    flex-basis: 100%;
-    margin: 0;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 50px;
+	flex-basis: 100%;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 50px;
 }
 
 .people-image {
-    max-width: 300px;
+	max-width: 300px;
 }
 
 .people-image img {
-    width: 100%;
+	width: 100%;
 }
 
 .people-copy {
-    padding: 25px;
+	padding: 25px;
 }
 
 .people-copy h2 {
-    margin: 0 0 5px 0;
+	margin: 0 0 5px 0;
 }
 
 .people-copy h3 {
-    margin-top: 0;
+	margin-top: 0;
 }
 
 .people-copy h4 {
-    margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .people-copy ul {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .people-top-three {
-    list-style: none;
-    padding-left: 0;
+	list-style: none;
+	padding-left: 0;
 }

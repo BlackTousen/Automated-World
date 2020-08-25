@@ -10,3 +10,17 @@ body {
 .intro h2 {
     text-align: center;
 }
+
+footer {
+    height: 50px;
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#copyright {
+    margin: 0;
+}

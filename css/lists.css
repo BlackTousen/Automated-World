@@ -4,7 +4,7 @@
 }
 
 .cities-list {
-    background-color: lightskyblue;
+    background-color: azure;
     padding: 50px;
     display: flex;
     flex-flow: row wrap;
@@ -16,6 +16,7 @@
     margin: 10px;
     background-color: rgba(0, 0, 0, .15);
     min-width: 200px;
+    border-bottom: 10px solid tomato;
 }
 
 #city-intro {
@@ -61,7 +62,7 @@
 }
 
 .landmarks-list {
-    background-color: lightskyblue;
+    background-color: azure;
     padding: 50px;
     display: flex;
     flex-flow: row wrap;
@@ -73,6 +74,7 @@
     margin: 10px;
     background-color: rgba(0, 0, 0, .15);
     min-width: 200px;
+    border-bottom: 10px solid tomato;
 }
 
 #landmark-intro {
@@ -118,7 +120,7 @@
 }
 
 .people-list {
-    background-color: lightskyblue;
+    background-color: azure;
     padding: 50px;
     display: flex;
     flex-flow: row wrap;
@@ -130,6 +132,7 @@
     margin: 10px;
     background-color: rgba(0, 0, 0, .15);
     min-width: 200px;
+    border-bottom: 10px solid tomato;
 }
 
 #people-intro {

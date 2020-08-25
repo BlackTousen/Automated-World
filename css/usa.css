@@ -17,6 +17,6 @@ main h1 {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	padding: 25px;
-	border: 10px solid tomato;
+	border: 10px solid #b22234;
 	background-color: rgba(0, 0, 0, 0.5);
 }

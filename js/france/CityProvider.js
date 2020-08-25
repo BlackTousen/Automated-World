@@ -6,7 +6,8 @@ const cityCollection = [
         region: "Ile-de-France",
         topOne: "Eiffel Tower",
         topTwo: "Louvre Museum",
-        topThree: "Arc de Triomphe"
+        topThree: "Arc de Triomphe",
+        photo: "img/france/paris.jpg"
     },
     {
         name: "Marseille",
@@ -15,7 +16,8 @@ const cityCollection = [
         region: "Bouches-du-Rhone",
         topOne: "Basilique Notre Dame de la Garde",
         topTwo: "SENSAS Marseille",
-        topThree: "La Cantine de Lynn"
+        topThree: "La Cantine de Lynn",
+        photo: "img/france/marseille.jpg"
 
     },
     {
@@ -25,16 +27,18 @@ const cityCollection = [
         region: "Gironde",
         topOne: "Bassins de Lumières",
         topTwo: "BLISSS",
-        topThree: "Porte Quinze"
+        topThree: "Porte Quinze",
+        photo: "img/france/bordeaux.jpg"
     },
     {
         name: "Nice",
         area: "27.77",
         population: "342,522",
-        region: "French Riviera - Cote d'Azur",
+        region: "French Riviera",
         topOne: "Old Town",
         topTwo: "Promenade des Anglais",
-        topThree: "La Route Du Miam"
+        topThree: "La Route Du Miam",
+        photo: "img/france/nice.jpg"
     },
     {
         name: "Lyon",
@@ -43,7 +47,18 @@ const cityCollection = [
         region: "Rhone",
         topOne: "Basilique Notre Dame de Fourviere",
         topTwo: "Parc de la Tete d'Or",
-        topThree: "Bouchon Bat D'ARgent"
+        topThree: "Bouchon Bat D'ARgent",
+        photo: "/img/france/lyon.jpg"
+    },
+    {
+        name: "Strasbourg",
+        area: "30.22",
+        population: "277,270",
+        region: "Bas-Rhin",
+        topOne: "Strasbourg Cathedral",
+        topTwo: "La Petite France",
+        topThree: "Parc de l'Orangerie",
+        photo: "/img/france/strasbourg.jpg"
     }
 ];
 

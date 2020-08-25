@@ -5,25 +5,36 @@ import { useLandmarkData } from './LandmarksDataProvider.js';
 export const createCityHTML = (cityObj) => {
 	return `
         <div class="cities-list-entries">
-            <h2>${cityObj.name}</h2>
-            <h3>${cityObj.region}</h3>
-            <p class="cities-area">${cityObj.area} mi<sup>2</sup></p>
-            <p class="cities-population">${cityObj.population}</p>
+            <div class="cities-image">
+                <img src="../${cityObj.photo}" alt="${cityObj.name}">
+            </div>
+            <div class="cities-copy">
+                <h2>${cityObj.name}</h2>
+                <h3>${cityObj.region}</h3>
+                <p class="cities-area"><strong>Size:</strong> ${cityObj.area} mi<sup>2</sup></p>
+                <p class="cities-population"><strong>Population:</strong> ${cityObj.population}</p>
+                <ul class="cities-top-three">
+                    <li><h4>Must-See Places:</h4></li>
+                    <li>${cityObj.topOne}</li>
+                    <li>${cityObj.topTwo}</li>
+                    <li>${cityObj.topThree}</li>
+                </ul>
+            </div>
         </div>
     `;
 };
 
 export const createFamousHTML = (famousObj) => {
-	// return `
-	//     <section class="Famous-List">
-	//         <li>${FamousArray}</li>
-	//     </section>
-	// `;
 	return `
         <div class="people-list-entries">
-            <h2>${famousObj.name}</h2>
-			<p class="people-birth-info">Born on ${famousObj.birth.date} in ${famousObj.birth.place}</p>
-			<p class="people-death-info">Died on ${famousObj.death.date} in ${famousObj.death.place}</p>
+            <div class="people-image">
+                <img src="../${famousObj.photo}" alt="${famousObj.name}">
+            </div>
+            <div class="people-copy">
+                <h2>${famousObj.name}</h2>
+                <p class="people-birth-info">Born ${famousObj.birth.date} in ${famousObj.birth.place}</p>
+                <p class="people-death-info">Died ${famousObj.death.date} in ${famousObj.death.place}</p>
+            </div>
         </div>
     `;
 };
@@ -31,9 +42,14 @@ export const createFamousHTML = (famousObj) => {
 export const createLandmarksHTML = (landmarkObj) => {
 	return `
         <div class="landmarks-list-entries">
-            <h2>${landmarkObj.name}</h2>
-            <p class="landmark-address-street">${landmarkObj.address.street}</p>
-            <p class="landmark-address-city">${landmarkObj.address.city}</p>
+            <div class="landmarks-image">
+                <img src="../${landmarkObj.photo}" alt="${landmarkObj.name}">
+            </div>
+            <div class="landmarks-copy">
+                <h2>${landmarkObj.name}</h2>
+                <p class="landmark-address-street">${landmarkObj.address.street}</p>
+                <p class="landmark-address-city">${landmarkObj.address.city}</p>
+            </div>
         </div>
     `;
 };

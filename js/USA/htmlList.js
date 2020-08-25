@@ -66,7 +66,7 @@ export const cityList = () => {
 
 	// Add to the existing HTML in the content element
 	contentElement.innerHTML += `
-    
+    <h2 id="city-intro">Cities Worth Visiting</h2>
         ${cityHTMLRepresentation}
     `;
 };
@@ -83,7 +83,7 @@ export const famousList = () => {
 
 	// Add to the existing HTML in the content element
 	contentElement.innerHTML += `
-    
+        <h2 id="people-intro">Historical Figures</h2>
         ${famousHTMLRepresentation}
     `;
 };
@@ -100,7 +100,7 @@ export const landmarksList = () => {
 
 	// Add to the existing HTML in the content element
 	contentElement.innerHTML += `
-    
+        <h2 id="landmark-intro">Must See Locations</h2>
         ${landmarksHTMLRepresentation}
     `;
 };

@@ -1,0 +1,22 @@
+main {
+	background-image: url('../img/usa/yosemite.jpg');
+	background-position: center center;
+	background-size: cover;
+	margin: 0;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main h1 {
+	margin: 0;
+	text-align: center;
+	color: white;
+	font-size: 4em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	padding: 25px;
+	border: 10px solid tomato;
+	background-color: rgba(0, 0, 0, 0.5);
+}

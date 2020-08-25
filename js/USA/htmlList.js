@@ -13,19 +13,28 @@ export const createCityHTML = (cityObj) => {
     `;
 };
 
-export const createFamousHTML = (FamousArray) => {
+export const createFamousHTML = (famousObj) => {
+	// return `
+	//     <section class="Famous-List">
+	//         <li>${FamousArray}</li>
+	//     </section>
+	// `;
 	return `
-        <section class="Famous-List">
-            <li>${FamousArray}</li>
-        </section>
+        <div class="people-list-entries">
+            <h2>${famousObj.name}</h2>
+			<p class="people-birth-info">Born on ${famousObj.birth.date} in ${famousObj.birth.place}</p>
+			<p class="people-death-info">Died on ${famousObj.death.date} in ${famousObj.death.place}</p>
+        </div>
     `;
 };
 
-export const createLandmarksHTML = (LandmarksArray) => {
+export const createLandmarksHTML = (landmarkObj) => {
 	return `
-        <section class="Famous-List">
-            <li>${LandmarksArray}</li>
-        </section>
+        <div class="landmarks-list-entries">
+            <h2>${landmarkObj.name}</h2>
+            <p class="landmark-address-street">${landmarkObj.address.street}</p>
+            <p class="landmark-address-city">${landmarkObj.address.city}</p>
+        </div>
     `;
 };
 
@@ -53,7 +62,7 @@ export const famousList = () => {
 
 	let famousHTMLRepresentation = '';
 	for (const placeHolderFamous of famousDataArray) {
-		famousHTMLRepresentation += createFamousHTML(placeHolderFamous.Name);
+		famousHTMLRepresentation += createFamousHTML(placeHolderFamous);
 	}
 
 	// Add to the existing HTML in the content element
@@ -70,9 +79,7 @@ export const landmarksList = () => {
 
 	let landmarksHTMLRepresentation = '';
 	for (const placeHolderLandmarks of landmarksDataArray) {
-		landmarksHTMLRepresentation += createLandmarksHTML(
-			placeHolderLandmarks.Name
-		);
+		landmarksHTMLRepresentation += createLandmarksHTML(placeHolderLandmarks);
 	}
 
 	// Add to the existing HTML in the content element

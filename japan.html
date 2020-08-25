@@ -3,34 +3,52 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="css/japan.css">
+        <title>Japan | Time Code</title>
+        <!-- <link rel="stylesheet" href="css/japan.css"> -->
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/japan.css">
+		<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<header class="header">This is the header 
-            <div class="dropdown">
-                <button id="myBtn" class="dropbtn">Menu</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="/index.html">Home</a>
-                </div>
-              </div>
-            <p>Japan</p>
+		<header class="header">
+			<div id="header-logo">
+				<a href="index.html">
+					<img src="img/tct-logo.png" alt="Time Code Travel logo">
+				</a>
+			</div>
+			<nav id="main-nav">
+				<ul>
+					<li><a href="index.html">France</a></li>
+					<li style="background-color: rgba(0, 0, 0, .25);"><a href="japan.html">Japan</a></li>
+					<li><a href="usa.html">USA</a></li>
+				</ul>
+			</nav>
         </header>
-		<main class="main">This is main and will hold a image or flag</main>
+        
+        <main class="main"><h1>Japan</h1></main>
+        
 		<section class="section-container">
-			This will wrap the Cities, Landmarks, and Famous people
-			<div class="cities-holder">
-                Cities list
-            <ul class="cities-list"></ul>
+
+            <div class="cities-holder">
+                <div class="cities-list"></div>
             </div>
-			<div class="landmarks-holder">Landmarks list
+    
+            <div class="landmarks-holder">
                 <ul class="landmarks-list"></ul>
             </div>
-			<div class="famous-holder">Famous people list
-                <ul class="famous-list"></ul>
+
+            <div class="famous-holder">
+                <ul class="people-list"></ul>
             </div>
-		</section>
-		<footer class="footer"></footer>
+
+        </section>
+
+        <footer class="footer">
+			<h3 id="copyright">&copy; 2020 travelCode.travel</h3>
+		</footer>
+
     </body>
+
     <script type="module" src="/scripts/japan/main.js"></script>
-</html>
+
+    </html>

@@ -14,9 +14,9 @@
 
 .cities-list-entries {
 	margin: 10px;
-	background-color: rgba(0, 0, 0, 0.15);
-	min-width: 200px;
-	border-bottom: 10px solid tomato;
+    background-color: rgba(0, 0, 0, 0.15);
+    width: 300px;
+    border-bottom: 10px solid tomato;
 }
 
 #city-intro {
@@ -52,8 +52,13 @@
 	margin-bottom: 5px;
 }
 
+.cities-copy p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
 .cities-copy ul {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .cities-top-three {
@@ -73,8 +78,8 @@
 .landmarks-list-entries {
 	margin: 10px;
 	background-color: rgba(0, 0, 0, 0.15);
-	min-width: 200px;
-	border-bottom: 10px solid tomato;
+	width: 300px;
+    border-bottom: 10px solid tomato;
 }
 
 #landmark-intro {
@@ -110,6 +115,11 @@
 	margin-bottom: 5px;
 }
 
+.landmarks-copy p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
 .landmarks-copy ul {
 	margin-bottom: 0;
 }
@@ -131,7 +141,7 @@
 .people-list-entries {
 	margin: 10px;
 	background-color: rgba(0, 0, 0, 0.15);
-	min-width: 200px;
+	width: 300px;
 	border-bottom: 10px solid tomato;
 }
 
@@ -165,7 +175,12 @@
 }
 
 .people-copy h4 {
-	margin-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.people-copy p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .people-copy ul {
